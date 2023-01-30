@@ -1,7 +1,6 @@
 # AVR_uart
 
-Simple library based on cyclic buffer to handle sending bytes from uC to device using UART on AVR ATMega328p
-Works on new chips like ATMega4809.
+Simple library based on cyclic buffer to handle sending bytes from uC to device using UART on AVR ATMega328p. Works on new chips like ATMega4809.
 
 # Notes
 
