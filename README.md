@@ -2,6 +2,10 @@
 
 Simple library based on cyclic buffer to handle sending bytes from uC to device using UART on AVR ATMega328p. Works on new chips like ATMega4809.
 
+# Tested on:
+- ATMega328p
+- ATMega4809
+
 # Notes
 
 -   TX_BUFF_SIZE should be power of two.
@@ -57,3 +61,17 @@ Send byte in binary form.
     void uart_putbuf( uint8_t * buf, uint8_t len, char * label );
 
 Send given buffer in hex format with label, for example: HappyLabel: A2B7CC20\r\n
+
+---
+
+    void register_uart_rx_event_callback(void (*callback)(void *buf));
+
+Register callback function to call, when new line got received.
+
+---
+
+   void uart_get_str(char *buf);
+
+Event function that run in main, non-blocking while loop. This function invoke callback.
+
+---

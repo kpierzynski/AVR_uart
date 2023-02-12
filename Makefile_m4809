@@ -1,7 +1,7 @@
 #FOR WINDOWS
 MCU=atmega4809
 F_CPU=20000000UL/6UL
-PORT=COM8
+PORT=COM19
 PROGRAMMER=jtag2updi
 
 CC=./../toolchain/bin/avr-gcc.exe
