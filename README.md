@@ -70,7 +70,7 @@ Register callback function to call, when new line got received.
 
 ---
 
-   void uart_get_str(char *buf);
+    void uart_get_str(char *buf);
 
 Event function that run in main, non-blocking while loop. This function invoke callback.
 
